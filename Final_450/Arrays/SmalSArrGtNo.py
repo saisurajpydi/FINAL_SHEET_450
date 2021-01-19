@@ -6,25 +6,26 @@ class Solution:
         self.arr = arr
         self.n = n
         self.x = x
-    
+    def func(self):
         curSum = 0
-        result = self.n + 1
+        result = n + 1
         start = 0
         end = 0
-        while (end < self.n):
+        while (end < n):
             
-            while ( curSum <= self.x and end < self.n):
-                curSum += self.arr[end]
+            while ( curSum <= x and end < n):
+                curSum += arr[end]
                 end += 1
                 
-            while ( curSum > self.x and start < self.n ):
+            while ( curSum > x and start < n ):
                 if(end - start < result ):
                     result = end - start
-                curSum -= self.arr[start]
+                curSum -= arr[start]
                 start += 1
         return result
+   
     s = Solution(arr,n,x)
-    print(s)
+    print(s.func)
         
 
 
