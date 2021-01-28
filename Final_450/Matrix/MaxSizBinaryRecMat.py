@@ -1,55 +1,6 @@
-"""a = list(map(str,input().split()))
-print(a)"""
-"""b = input("enter ")
-for i in b:
-    print(i)
-print(b)
 """
+Given a binary matrix. Find the maximum area of a rectangle formed only of 1s in the given matrix.
 """
-# oops in python
-class Dog:
-    def __init__(self,name):
-        self.name = name
-        print(name)
-    def bark(self):
-        print("BARK")
-    def add(self,x):
-        return x + 1
-d = Dog("suraj")
-
-#print(d.add(1))
-#d.bark()
-"""
-"""
-n = 10
-for i in reversed(range(n+1)):
-    print(i, end = " ")
-print("")
-for i in range(n-1,-1,-1):
-    print(i, end =" ")
-print("")
-for i in range(0,5):
-    print(i,end = " ")
-"""
-from collections import deque
-stk = deque()
-stk.append(2)
-stk.append(4)
-print(stk)
-#stk.pop()
-print(stk[-1])
-stk.pop()
-stk.pop()
-#print(stk.peek())
-#stk.append(2)
-if(not stk):
-    print(not stk)
-    stk.append(100)
-    print(stk)
-print(stk)
-
-
-# max rectangle solution
 from collections import deque
 def maxArea(M, n, m):
     # code here
