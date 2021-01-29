@@ -31,6 +31,7 @@ print("")
 for i in range(0,5):
     print(i,end = " ")
 """
+"""
 from collections import deque
 stk = deque()
 stk.append(2)
@@ -84,3 +85,25 @@ def maxHist(result,m):
         maxArea = max(area,maxArea)    
         
     return maxArea
+"""
+"""
+def swap_string(s):
+    swapped_string=""
+    swapped_string += s.swapcase()
+    return swapped_string
+#print("enter ")
+s = input()
+print(swap_string(s))
+"""
+"""
+import math
+def gp(a,r,n):
+    return (a * (int(math.pow(r,n-1))))
+print("enter ")
+a = list(map(int,input().split()))
+print(gp(a[0],a[1],a[2]))
+"""
+
+index = 10
+print(index / 2)
+print(index // 2)
