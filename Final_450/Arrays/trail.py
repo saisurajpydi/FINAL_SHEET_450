@@ -103,7 +103,31 @@ print("enter ")
 a = list(map(int,input().split()))
 print(gp(a[0],a[1],a[2]))
 """
-
+"""
 index = 10
 print(index / 2)
 print(index // 2)
+"""
+"""
+a = ["1","2","3"]
+s = ""
+for i in a:
+    s += i
+print(s)
+print(type(s))
+s = int(s)
+print(s)
+print(type(s))
+"""
+import random
+from tkinter import *
+root=Tk()
+root.geometry("700x400")
+l1=Label(root,text='',font=("times",200))
+def roll():
+    number=['\u2680','\u2681','\u2682','\u2683','\u2684','\u2685']
+    l1.config(text=f'{random.choice(number)}{random.choice(number)}')
+    l1.pack()
+b1=Button(root,text="lets roll",command=roll)
+b1.place(x = 330, y = 0)
+root.mainloop()
