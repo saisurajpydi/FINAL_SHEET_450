@@ -1,5 +1,4 @@
 public class ImpleDLL {
-    {
     static Node head = null;
 
     static class Node {
@@ -44,9 +43,18 @@ public class ImpleDLL {
     }
 
     public void printDll(Node head) {
+        System.out.println("forward direction");
+        Node last = null;
         while (head != null) {
             System.out.print(head.data + "<-->");
+            last = head;
             head = head.next;
+        }
+        System.out.println();
+        System.out.println("backward direction");
+        while (last != null) {
+            System.out.print(last.data + "<-->");
+            last = last.prev;
         }
     }
 
