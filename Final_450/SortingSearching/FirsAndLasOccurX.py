@@ -1,4 +1,4 @@
-#First and last occurrences of X 
+# First and last occurrences of X
 """
 Given a sorted array with possibly duplicate elements, the task is to find indexes of first and last occurrences of an element x in the given array.
 
@@ -28,23 +28,24 @@ Output:
 """
 T = int(input())
 result = []
+subresult = list()
 for t in range(T):
-    a = list(map(int,input().split()))
+    a = list(map(int, input().split()))
     n = a[0]
     x = a[1]
-    arr = list(map(int,input().split()))
+    arr = list(map(int, input().split()))
     first = -1
-	last = -1
-	for i in range(0, n) :
-		if (x != arr[i]) :
-			continue
-		if (first == -1) :
-			first = i
-		last = i
-	if(first == -1 and last == -1):
-	    subresult = [-1]
-	else:
-        subresult = [first,last]
+    last = -1
+    for i in range(0, n):
+        if (x != arr[i]):
+            continue
+        if (first == -1):
+            first = i
+            last = i
+    if(first == -1 and last == -1):
+        subresult.append(-1)
+    else:
+        subresult += [first, last]
     result.append(subresult)
 for i in result:
     if(len(i) == 2):
