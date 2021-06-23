@@ -43,9 +43,10 @@ import java.util.*;
 public class DoubleHelixSpoj {
 
     public static void main(String args[]) {
+        ArrayList<Integer> alist = new ArrayList<>();
         Scanner sc = new Scanner(System.in);
         while (true) {
-            int ma = 0;
+
             int n = sc.nextInt();
             if (n == 0)
                 break;
@@ -61,7 +62,7 @@ public class DoubleHelixSpoj {
                 }
                 int s1 = 0, s2 = 0;
                 int i = 0, j = 0;
-                // int ma = 0;
+                int ma = 0;
                 while (i < n && j < m) {
                     if (a[i] < b[j]) {
                         s1 += a[i++];
@@ -81,9 +82,10 @@ public class DoubleHelixSpoj {
                     s2 += b[j++];
                 }
                 ma = ma + Math.max(s1, s2);
-
+                alist.add(ma);
             }
-            System.out.println(ma);
+
         }
+        System.out.println(alist);
     }
 }
