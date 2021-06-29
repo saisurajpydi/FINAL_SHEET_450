@@ -59,4 +59,5 @@ public class KadanesAlgo {
  * the i th val is assigned to var sum, max is initially assigned with the first
  * value of array , and in each iteration checks, max not less tham sum val. and
  * the max of max and sum is prst in max. return max after complete iteration.
+ * time = O(N) space: O(1)
  */

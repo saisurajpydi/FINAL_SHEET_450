@@ -54,5 +54,5 @@ public class MaxSum3Stacks {
 /**
  * SOLUTION DESCRIPTION: firstly find sum of each stack if sum of all stacks are
  * same return the sum val else check for the max sum stack and pop the top and
- * recursively repeat the above.
+ * recursively repeat the above. time : O(N) space: constant variables. O(1)
  */
